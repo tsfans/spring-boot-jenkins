@@ -19,6 +19,7 @@ echo "stop tomcat..."
 systemctl stop tomcat
 echo "copy war file..."
 cp $SOURCE/$WARFILE ./
+chown -R www.www ../
 echo "start tomcat..."
 systemctl start tomcat
 cd backup
