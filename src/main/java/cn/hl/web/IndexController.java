@@ -19,4 +19,9 @@ public class IndexController {
 	public String say(String name) {
 		return name+" say hello!";
 	}
+	
+	@RequestMapping(value="/",method=RequestMethod.GET)
+	public String index() {
+		return "Index Page";
+	}
 }
