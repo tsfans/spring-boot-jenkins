@@ -14,4 +14,9 @@ public class IndexController {
 	public String hello(String name) {
 		return "hello,"+name+"!";
 	}
+	
+	@RequestMapping(value="/say",method=RequestMethod.GET)
+	public String say(String name) {
+		return name+" say hello!";
+	}
 }
