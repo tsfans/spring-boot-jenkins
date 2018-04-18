@@ -5,7 +5,7 @@ PATH=$JAVA_HOME/bin:$JAVA_HOME/jre/bin:$PATH
 CLASSPATH=.:$JAVA_HOME/lib:$JAVA_HOME/jre/lib:$CLASSPATH
 SOURCE=/root/.jenkins/workspace/spring-boot-jenkins/target
 DIR=/data/wwwroot/spring-boot-jenkins
-WARFILE=spring-boot-jenkins-0.0.1-SNAPSHOT.war
+WARFILE=webapp.war
 
 if [ ! -d $DIR/backup ];then
    mkdir -p $DIR/backup
