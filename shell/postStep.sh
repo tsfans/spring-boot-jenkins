@@ -17,6 +17,8 @@ if [ -f $WARFILE ];then
 fi
 echo "stop tomcat..."
 systemctl stop tomcat
+echo "delete old project file..."
+rm -rf webapp*
 echo "copy war file..."
 cp $SOURCE/$WARFILE ./
 chown -R www.www ../
